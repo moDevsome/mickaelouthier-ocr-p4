@@ -13,3 +13,8 @@ Répertoire du projet numéro 4 de la formation Developpeur web d'Openclassroom 
 - Écrire un code HTML et CSS maintenable
 - Optimiser le référencement d'un site web
 - Assurer l'accessibilité d'un site web
+
+## Liens
+
+[Site d'origine à corriger](https://www.mickael-outhier.fr/OCR/P4/page2.html)
+[Site corrigé](https://modevsome.github.io/mickaelouthier-ocr-p4/)
