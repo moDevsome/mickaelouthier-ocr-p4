@@ -1040,3 +1040,27 @@ h4 {
         text-align: center;
     }
 }
+
+/** Correction MICKAEL OUTHIER **/
+q {
+    font-style: italic;
+}
+q::before, q::after {
+	content: "\"";
+}
+div.customer-report > q {
+	font-size: 18px;
+	color: #575757;
+}
+div.customer-report > q + p {
+    font-size: 18px;
+}
+h2 > strong {
+	font-weight: 400;
+	color: #000;
+	border-bottom: 2px dotted #f3976c;
+}
+div#title > h2 + p {
+	font-size: 14px;
+	color: #000 !important;
+}
