@@ -1050,6 +1050,11 @@ q {
 q::before, q::after {
 	content: "\"";
 }
+
+/* We need to set a "background-size: contain", because the picture width has been scale down to 1400px */
+div#bloc-1-hero.bg-banniere {
+	background-size: contain !important;
+}
 div.customer-report > q {
 	font-size: 18px;
 	color: #575757;
