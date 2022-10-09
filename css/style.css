@@ -536,6 +536,7 @@ a[data-lightbox] {
     text-align: center;
 }
 
+/* correction Mickael Outhier
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
@@ -553,6 +554,7 @@ a[data-lightbox]:hover::before {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
+*/
 
 a[data-lightbox]:hover img {
     opacity: 0.6;
@@ -1063,4 +1065,28 @@ h2 > strong {
 div#title > h2 + p {
 	font-size: 14px;
 	color: #000 !important;
+}
+
+a[data-lightbox] {
+	margin-bottom: 24px;
+}
+a[data-lightbox]:hover::before {
+	position: absolute;
+	top: calc((100% / 2) - 25px);
+	left: calc((100% / 2) - 25px);
+    z-index: 1;
+    width: 50px;
+	height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+	border-radius: 50%;
+    font-size: 32px;
+	background-color: rgba(0, 0, 0, .6);
+	color: #FFF;
+    content: "+";
+}
+.portfolio-thumb {
+    margin-bottom: 0;
 }
