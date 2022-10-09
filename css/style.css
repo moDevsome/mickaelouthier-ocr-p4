@@ -1055,7 +1055,7 @@ q::before, q::after {
 p.cor-heading {
     position: relative;
 	font-size: 22px;
-	color: #eee !important;
+	color: #fff !important;
 	text-shadow: 0 1px 1px #fff;
 }
 div#bloc-1-hero.bg-banniere {
