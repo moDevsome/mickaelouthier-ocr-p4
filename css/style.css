@@ -1113,3 +1113,32 @@ a[data-lightbox]:hover::before {
 .portfolio-thumb {
     margin-bottom: 0;
 }
+
+footer p.text-center {
+    margin-bottom: 14px;
+	font-size: 1.2em;
+	color: #000 !important;
+	font-weight: 700;
+}
+
+div.social {
+	margin-bottom: 21px;
+}
+
+ul#footer-links {
+    padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+ul#footer-links > li {
+    list-style: none;
+}
+ul#footer-links > li:not(:first-child):before {
+    padding: 11px;
+    content: "|";
+    color: #555;
+}
+ul#footer-links > li > a {
+	color: #000 !important;
+}
