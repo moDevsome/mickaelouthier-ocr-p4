@@ -1156,7 +1156,7 @@ ul#footer-links > li > a {
 /** Set styles for phone and pad */
 @media screen and (max-width: 1080px) {
 
-    div#bloc-1-hero.bg-banniere {
+    div#bloc-1-hero.bg-banniere, .bg-banniere {
         background-image: url(../img/agence-la-panthere.webp);
         background-size: cover !important;
     }
