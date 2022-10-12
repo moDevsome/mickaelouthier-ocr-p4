@@ -1078,16 +1078,17 @@ div#title > h2 + p {
 	color: #000 !important;
 }
 
-a.btn-atomic-tangerine.btn-rd {
+a.btn-atomic-tangerine.btn-rd, button.btn-atomic-tangerine {
     background: #F3976C;
-    color: #000 !important; /** COR22 **/
-    border: 3px solid #F3976C; /** COR22 **/
+    color: #000 !important; /** COR22, COR25 **/
+    border: 3px solid #F3976C; /** COR22, COR25 **/
 }
 
-a.btn-atomic-tangerine.btn-rd:hover {
-    background: #ffffff !important; /** COR22 **/
-    border: 3px solid #cccccc; /** COR22 **/
-    border-radius: 20px; /** COR22 **/
+a.btn-atomic-tangerine.btn-rd:hover, button.btn-atomic-tangerine:hover {
+    background: #ffffff !important; /** COR22, COR25 **/
+    border: 3px solid #cccccc; /** COR22, COR25 **/
+    border-radius: 20px; /** COR22, COR25 **/
+    color: #000 !important; /** COR25 **/
 }
 
 a[data-lightbox] {
