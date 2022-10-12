@@ -1114,6 +1114,15 @@ a[data-lightbox]:hover::before {
     margin-bottom: 0;
 }
 
+div#contact-page-title {
+	background: linear-gradient(90deg,rgba(0,0,0,0) 0 8%,rgba(0,0,0,.8) 18% 82%,rgba(0,0,0,0) 92% 100%);
+}
+div#contact-page-title p.text-center {
+	font-size: 1em;
+	font-weight: bolder;
+    color: #fff !important;
+}
+
 footer p.text-center {
     margin-bottom: 14px;
 	font-size: 1.2em;
