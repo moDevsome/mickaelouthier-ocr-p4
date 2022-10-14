@@ -1059,9 +1059,7 @@ p.cor-heading {
 	color: #fff !important;
 	text-shadow: 0 1px 1px #fff;
 }
-div#bloc-1-hero.bg-banniere {
-	background-size: contain !important;
-}
+
 div.cor-customer-report > q {
 	font-size: 18px;
 	color: #575757;
@@ -1155,15 +1153,23 @@ ul#footer-links > li > a {
 }
 
 /** Set styles for phone and pad */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 980px) {
 
     div#bloc-1-hero.bg-banniere, .bg-banniere {
         background-image: url(../img/agence-la-panthere.webp);
-        background-size: cover !important;
+        background-size: auto 100% !important;
     }
 
     .bg-presentation {
         background-image: url("../img/image-de-presentation.webp");
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    div#bloc-1-hero.bg-banniere {
+        background-size: contain !important;
     }
 
 }
