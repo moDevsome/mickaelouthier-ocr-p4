@@ -556,7 +556,7 @@ a[data-lightbox]:hover::before {
 }
 */
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover img, a[data-lightbox]:focus img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
@@ -795,7 +795,7 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.ltc-white:hover {
+.ltc-white:hover, .ltc-white:focus {
     color: #cccccc!important;
 }
 
@@ -1052,6 +1052,13 @@ q::before, q::after {
 	content: "\"";
 }
 
+nav > ul.navbar-nav > li > a {
+    transition: color 250ms;
+}
+nav > ul.navbar-nav > li > a:hover, nav > ul.navbar-nav > li > a:focus {
+    color: #000 !important;
+}
+
 /* We need to set a "background-size: contain", because the picture width has been scale down to 1400px */
 p.cor-heading {
     position: relative;
@@ -1083,7 +1090,12 @@ a.btn-atomic-tangerine.btn-rd, button.btn-atomic-tangerine {
     border: 3px solid #F3976C; /** COR22, COR25 **/
 }
 
-a.btn-atomic-tangerine.btn-rd:hover, button.btn-atomic-tangerine:hover {
+.ltc-white:hover {
+	color: #ccc !important;
+}
+
+a.btn-atomic-tangerine.btn-rd:hover, button.btn-atomic-tangerine:hover,
+a.btn-atomic-tangerine.btn-rd:focus, button.btn-atomic-tangerine:focus {
     background: #ffffff !important; /** COR22, COR25 **/
     border: 3px solid #cccccc; /** COR22, COR25 **/
     border-radius: 20px; /** COR22, COR25 **/
@@ -1093,7 +1105,7 @@ a.btn-atomic-tangerine.btn-rd:hover, button.btn-atomic-tangerine:hover {
 a[data-lightbox] {
 	margin-bottom: 24px;
 }
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before, a[data-lightbox]:focus::before {
 	position: absolute;
 	top: calc((100% / 2) - 25px);
 	left: calc((100% / 2) - 25px);
@@ -1132,6 +1144,10 @@ footer p.text-center {
 
 div.social {
 	margin-bottom: 21px;
+}
+
+a.social:focus > span {
+    color: #fff;
 }
 
 ul#footer-links {
