@@ -851,13 +851,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -876,8 +876,12 @@ h4 {
         position: relative;
     }
     .bloc {
+        /* correction MICKAEL OUTHIER
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+        */
+        padding-left: 0;
+        padding-right: 0;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -886,9 +890,12 @@ h4 {
     }
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
+        /* correction MICKAEL OUTHIER
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+        */
+        padding: 0;
     }
 }
 
@@ -1190,6 +1197,52 @@ ul#footer-links > li > a {
         background-image: url("../img/image-de-presentation.webp");
     }
 
+    div.cor-customer-report, p#cor-contact-team {
+        width: 80%;
+    }
+
+    div.cor-customer-report {
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        clear: both;
+        float: none;
+    }
+
+    p#cor-contact-team {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img.portfolio-thumb {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.social {
+        max-width: 300px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    ul#footer-links {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    ul#footer-links > li:not(:first-child)::before {
+        display: none;
+    }
+
+    /* Contact area */
+    div#bloc-7 > div.container > div.row {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -1198,4 +1251,47 @@ ul#footer-links > li > a {
         background-size: contain !important;
     }
 
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    header.row {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio-row {
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+
+    div.portfolio-row > div.col-sm-6:not(:last-child) {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    div#contact-page-title {
+        background: rgba(0,0,0,.8);
+    }
+
+    div#bloc-7 > div.container > div.row > div.col-sm-6:first-child {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    div#bloc-5-cta {
+        background-size: cover !important;
+    }
+}
+
+/** The button navbar-toggle is under the logo on the Galaxy fold */
+@media screen and (max-width: 310px) {
+    div.navbar-brand {
+        width: 78%;
+    }
+    div.navbar-brand > img {
+        width: 100%;
+    }
 }
