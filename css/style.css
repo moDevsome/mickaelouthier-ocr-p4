@@ -1135,6 +1135,16 @@ div#contact-page-title p.text-center {
     color: #fff !important;
 }
 
+div#contact-us > p > a, div#contact-us > p > span {
+	display: block;
+}
+div#contact-us > p > a:hover, div#contact-us > p > a:focus {
+    color: #000 !important;
+}
+div#contact-us > p i {
+    font-style: normal;
+}
+
 footer p.text-center {
     margin-bottom: 14px;
 	font-size: 1.2em;
