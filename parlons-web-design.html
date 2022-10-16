@@ -68,7 +68,7 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate>
 					<div class="form-group">
 						<label for="name">
 							Nom
@@ -162,6 +162,14 @@
 	<script src="js/blocs.min.js"></script>
 	<script src="js/jqBootstrapValidation.min.js"></script><!-- Cloudfare CDN version is not functionnal -->
 	<script src="js/formHandler.min.js"></script>
+	<script>
+		/*
+		Active it to use the form message
+		$(document).ready(function() {
+			$('form#form_1').attr('success-msg', 'Your message has been sent.').attr('fail-msg', 'Sorry it seems that our mail server is not responding, Sorry for the inconvenience!');
+		});
+		*/
+	</script>
 
 </body>
 </html>
