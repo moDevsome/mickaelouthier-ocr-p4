@@ -16,5 +16,5 @@ Répertoire du projet numéro 4 de la formation Developpeur web d'Openclassroom 
 
 ## Liens
 
-- [Site d'origine à corriger](https://www.mickael-outhier.fr/OCR/P4/page2.html)
+- [Site d'origine à corriger](https://www.mickael-outhier.fr/OCR/P4/)
 - [Site corrigé](https://modevsome.github.io/mickaelouthier-ocr-p4/)
