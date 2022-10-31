@@ -97,6 +97,9 @@ a:hover {
     */
     background-color: rgba(0, 0, 0, .25);
 }
+div#bloc-5-cta.texture-paper::before {
+    background-color: rgba(0, 0, 0, .35); /* The contrast is not enough with an opacity at .25 */
+}
 
 .b-parallax {
     background-attachment: fixed;
